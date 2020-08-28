@@ -20,6 +20,8 @@ module.exports = (robot) ->
   #   else
   #     res.reply "Opening #{doorType} doors"
   #
+   robot.hear /(.*) about yourself/i, (res) ->
+     res.reply "Hi I'm Sherlock, the bot created by Bala. Nice to meet you."
    robot.hear /I like pie/i, (res) ->
      res.emote "makes a freshly baked pie"
   #
